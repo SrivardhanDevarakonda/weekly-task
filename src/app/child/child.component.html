@@ -1,0 +1,26 @@
+<h1 attdirstyl> child component </h1>
+
+<div>
+    {{childvalue}}
+</div>
+
+
+<button type="button" (click)="increement()">increement</button>
+
+<button type="button" (click)="decreement()">decreement</button>
+
+<button type="button" (click)="table()">table</button>
+
+<p *ngIf="tableclicked">
+    {{childvalue}} * 1 = {{childvalue*1}}<br>
+    {{childvalue}} * 2 = {{childvalue*2}}<br>
+    {{childvalue}} * 3 = {{childvalue*3}}<br>
+    {{childvalue}} * 4 = {{childvalue*4}}<br>
+    {{childvalue}} * 5 = {{childvalue*5}}<br>
+    {{childvalue}} * 6 = {{childvalue*6}}<br>
+    {{childvalue}} * 7 = {{childvalue*7}}<br>
+    {{childvalue}} * 8 = {{childvalue*8}}<br>
+    {{childvalue}} * 9 = {{childvalue*9}}<br>
+    {{childvalue}} * 10 = {{childvalue*10}}
+
+</p>

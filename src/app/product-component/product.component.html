@@ -1,0 +1,29 @@
+<input [(ngModel)]="sea" placeholder="search filter list.." type="search"><br>
+<br>
+<div class="table-responsive">
+    <table class='table table-bordered table-hover'>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Code</th>
+                <th>Available</th>
+                <th>Price</th>
+                <th>5 star rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products | searchPipe:sea">
+                <td><img src='{{product.imageUrl}}' width="40px" height="40px" title="{{product.productName | uppercase}}"></td>
+                <td>{{product.productName}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.productCode}}</td>
+                <td>{{product.releaseDate | date:'fullDate'}}</td>
+                <td>{{product.price | currency:'EUR':true}}</td>
+                <td>{{product.starRating}}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+

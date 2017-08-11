@@ -1,0 +1,12 @@
+<h1 attdirstyl>{{title}}</h1>
+
+<div *ngIf='isvisible'>
+    <p>{{name}}</p>
+</div>
+
+
+<div *ngFor='let a of array '>
+    <p>{{a}}</p>
+</div>
+
+<input type="text" [(ngModel)]='name'>

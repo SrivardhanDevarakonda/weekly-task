@@ -1,0 +1,6 @@
+<h1 attdirstyl>
+    parent component
+</h1>
+<p>parentvalue = {{parentvalue}}</p>
+
+<app-child [childvalue]='parentvalue' (update)='updateparent($event)'></app-child>

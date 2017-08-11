@@ -1,0 +1,28 @@
+<h2 attdirstyl>second page</h2>
+
+<div class="row">
+  <div class="col-xs-6">
+    <ul class="list-group" >
+      <li class="list-group-item" *ngFor="let n of name">{{n}}</li>
+    </ul>
+    <h3>author</h3>
+    <ul class="list-group" >
+      <li class="list-group-item" *ngFor="let n of author">{{n}}</li>
+    </ul>
+  </div>
+</div>
+
+<h2>pipe sample</h2>
+
+<div>
+  value : <input [(ngModel)]='val'><br>
+  exponent : <input [(ngModel)]='exp'>
+
+<p>POWER : {{val | exponentPipe : exp}}</p>
+</div>
+
+<!--<div>
+   <ul class="list-group" >
+      <li class="list-group-item" *ngFor="let prod of ('products.json' | fetch) ">{{prod.productName}}</li>
+    </ul>
+</div>-->
